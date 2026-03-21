@@ -6,7 +6,8 @@ const app = express();
 // Proxy all requests to target server
 app.use('/', createProxyMiddleware({
   // target: 'http://47.104.226.75',
-  target : 'http://8.154.46.200',
+  // target : 'http://8.154.46.200',
+  target : 'http://43.135.173.167:86',
   changeOrigin: true,
   pathRewrite: {'^/': '/'}
 }));
